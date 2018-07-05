@@ -1,0 +1,93 @@
+*, ::after, ::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+/********************12 column layout implimentaion*************/
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.col-12 {
+  flex: 0 0 calc(100% / 12 *12); }
+
+.col-11 {
+  flex: 0 0 calc(100%/ 12 * 11); }
+
+.col-1 {
+  flex: 0 0 calc(100%/ 12 * 1); }
+
+.col-10 {
+  flex: 0 0 calc(100%/ 12* 10); }
+
+.col-2 {
+  flex: 0 0 calc(100%/ 12 * 2); }
+
+.col-9 {
+  flex: 0 0 calc(100%/ 12* 9); }
+
+.col-3 {
+  flex: 0 0 calc(100%/ 12 * 3); }
+
+.col-8 {
+  flex: 0 0 calc(100%/ 12* 8); }
+
+.col-4 {
+  flex: 0 0 calc(100%/ 12 * 4); }
+
+.col-7 {
+  flex: 0 0 calc(100%/ 12* 7); }
+
+.col-5 {
+  flex: 0 0 calc(100%/ 12 * 5); }
+
+.col-6 {
+  flex: 0 0 calc(100%/ 12* 6); }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.8rem;
+  margin: 3rem 4rem; }
+  .hero #getText, .hero #getUsers, .hero #getAPI {
+    width: 25rem;
+    height: 5rem;
+    background: purple;
+    color: white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: .03rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    margin: 3rem 2rem;
+    outline: none; }
+  .hero ul {
+    list-style: none; }
+
+@media screen and (max-width: 760px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .getAPI-container button {
+    display: block;
+    margin: 0 auto; } }
+
+html {
+  /* Setting font-size to 62.5% allows 1rem to be 10px */
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 40%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
